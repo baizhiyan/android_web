@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>消费订单</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    //10px 1rem;
+    !function(){function a(){if(document.documentElement.clientWidth<600){document.documentElement.style.fontSize=document.documentElement.clientWidth/32+"px"}else{document.documentElement.style.fontSize="16.875px"}}var b=null;window.addEventListener("resize",function(){clearTimeout(b),b=setTimeout(a,300)},!1),a()}(window);
+    </script>
+  </head>
+  <body class="gray-bg">
+    <section class="orders-item">
+      <ul>
+        <li>订单号：1505070010316792</li>
+        <li>下单时间：2015-05-07 18:46:32</li>
+        <li>店小二：<span>隋美喜欢啃脖怪</span></li>
+        <li class="refund">退款时间：2015-05-18 18:56:20</li>
+        <li class="refund">支付方式：支付宝</li>
+        <li class="refund">为<span>隋美喜欢啃脖怪</span>众筹</li>
+      </ul>
+    </section>
+    <section class="pay-item">
+      <ul>
+        <li><span class="fl-left">消费金额</span><em class="fl-right">10.00元</em></li>
+        <li><span class="fl-left">优惠券抵扣</span><em class="fl-right">0.00元</em></li>
+        <li><span class="fl-left">红包抵扣</span><em class="fl-right">0.00元</em></li>
+        <li><span class="fl-left">实付金额</span><em class="fl-right">9.50元</em></li>
+      </ul>
+    </section>
+    <section class="pay-shop">
+      <a href="#" class="clearfix">
+        <div class="fl-left">
+          <img src="img/shop_item.png" alt="">
+          <span>凡人天使</span>
+        </div>
+        <i class="fl-right ico"></i>
+      </a>
+    </section>
+    <section class="refund-state">
+      <p>退款金额将于两个工作日内退回到您的</p>
+      <p>支付宝或其对应银行卡内</p>
+      <p>如有疑问可拨打客服热线：5201314</p>
+    </section>
+    <button class="btn pay-btn pay-failed">去支付（还剩29分钟）</button>
+  </body>
+</html>

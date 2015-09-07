@@ -1,0 +1,103 @@
+body,div,a,ul,ol,li,span,em,strong,p,h1,h2,h3,h4,h5,img,i,form,input,button{
+	margin: 0px;
+	padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body {
+    -webkit-user-select: none;   /* 禁止选中文本（如无文本选中需求，此为必选项） */
+    user-select: none;
+    height: 100%;
+}
+/*body {
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; 
+}*/
+a, img {
+    -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */
+}
+a{
+	text-decoration: none;
+	outline: none;
+}
+li{
+  list-style: none;
+}
+button,input{
+	outline: none;
+}
+button{
+  border: none;
+}
+img{
+	outline: none;
+	vertical-align: top;
+}
+em{
+	font-style: normal;
+}
+strong{
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+  font-family: 'regularfont';
+  /*IE*/
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  /*现代浏览器*/
+  src:
+    url('../fonts/glyphicons-halflings-regular.eot?#font-spider') format('embedded-opentype'),
+    url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+    url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+} 
+.clearfix:after{
+  content: "\20"; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden;  
+}
+.clearfix {
+  /* 触发 hasLayout */ 
+  zoom: 1; 
+}
+.ico{
+  background-size: 100% 100%;
+  background-position: left top;
+}
+.fl-left{
+  float: left;
+}
+.fl-right{
+  float: right;
+}
+.fix{
+  position: fixed;
+}
+.clear-left{
+  clear: left;
+}
+.no-border{
+  border: none;
+}
+.invalidation{
+  color: #4c4c4c; /*订单时间失效的样式*/
+}
+.btn{
+  margin: 0 auto;
+  display: block;
+}
+.income{
+  color:#fc5b53;  /*收款时候是收入的时候字体颜色*/
+}
+.limit-width{
+  width: 6rem;
+  height: 2.2rem;
+  float: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

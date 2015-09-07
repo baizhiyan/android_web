@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>店小二列表</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    //10px 1rem;
+    !function(){function a(){if(document.documentElement.clientWidth<600){document.documentElement.style.fontSize=document.documentElement.clientWidth/32+"px"}else{document.documentElement.style.fontSize="16.875px"}}var b=null;window.addEventListener("resize",function(){clearTimeout(b),b=setTimeout(a,300)},!1),a()}(window);
+    </script>
+    <script type="text/javascript">
+      var myScroll;
+      function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+      }
+      document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+  </head>
+  <body style="background:#f1f1f1;"  onload="loaded()">
+    <div id="wrapper">
+      <div id="scroller">
+        <ul class="waiters-list">
+          <li>
+            <a href="#">
+              <img src="img/waiter_01.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>没有什么好的名字</span><span class="label"><img src="img/femme_ico.png" alt=""><em>么么哒么么哒</em></span></p>
+                <p><span>女</span><span class="spacing">双子座</span><span class="spacing">认证店小二</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/waiter_01.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>没有什么好的名字</span><span class="label"><img src="img/femme_ico.png" alt=""><em>么么哒么么哒</em></span></p>
+                <p><span>女</span><span class="spacing">双子座</span><span class="spacing">认证店小二</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/waiter_01.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>没有什么好的名字</span><span class="label"><img src="img/femme_ico.png" alt=""><em>么么哒么么哒</em></span></p>
+                <p><span>女</span><span class="spacing">双子座</span><span class="spacing">认证店小二</span></p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/waiter_01.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>没有什么好的名字</span><span class="label"><img src="img/femme_ico.png" alt=""><em>么么哒么么哒</em></span></p>
+                <p><span>女</span><span class="spacing">双子座</span><span class="spacing">认证店小二</span></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

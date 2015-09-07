@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>订单中心</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <script type="text/javascript" src="js/iscroll.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    //10px 1rem;
+    !function(){function a(){if(document.documentElement.clientWidth<600){document.documentElement.style.fontSize=document.documentElement.clientWidth/32+"px"}else{document.documentElement.style.fontSize="16.875px"}}var b=null;window.addEventListener("resize",function(){clearTimeout(b),b=setTimeout(a,300)},!1),a()}(window);
+    </script>
+    <script type="text/javascript">
+      var myScroll;
+      function loaded () {
+        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+      }
+      document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+  </head>
+  <body style="background:#f1f1f1;"  onload="loaded()">
+  <div id="wrapper">
+      <div id="scroller">
+        <ul class="orders-list">
+          <li>
+            <a href="#">
+              <img src="img/shop_item.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span class="limit-width">凡人天使我ss</span><span>&yen;10.00元</span></p>
+                <p><span>2015-05-07</span><span style="margin-left:2px">18:54:25</span></p>
+              </div>
+              <span class="fl-right order-status">订单已完成</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/shop_item.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>凡人天使</span><span>&yen;10.00元</span></p>
+                <p><span>2015-05-07</span><span style="margin-left:2px">18:54:25</span></p>
+              </div>
+              <span class="fl-right order-status">等待支付</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/shop_item.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>凡人天使</span><span>&yen;10.00元</span></p>
+                <p><span>2015-05-07</span><span style="margin-left:2px">18:54:25</span></p>
+              </div>
+              <span class="fl-right order-status invalid">订单已取消</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/shop_item.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>凡人天使</span><span>&yen;10.00元</span></p>
+                <p><span>2015-05-07</span><span style="margin-left:2px">18:54:25</span></p>
+              </div>
+              <span class="fl-right order-status invalid">订单已退款</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/shop_item.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>凡人天使</span><span>&yen;10.00元</span></p>
+                <p><span>2015-05-07</span><span style="margin-left:2px">18:54:25</span></p>
+              </div>
+              <span class="fl-right order-status invalid">订单已退款</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/shop_item.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>凡人天使</span><span>&yen;10.00元</span></p>
+                <p><span>2015-05-07</span><span style="margin-left:2px">18:54:25</span></p>
+              </div>
+              <span class="fl-right order-status invalid">订单已退款</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/shop_item.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>凡人天使</span><span>&yen;10.00元</span></p>
+                <p><span>2015-05-07</span><span style="margin-left:2px">18:54:25</span></p>
+              </div>
+              <span class="fl-right order-status invalid">订单已退款</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="img/shop_item.png" alt="" class="fl-left">
+              <div class="fl-left">
+                <p><span>凡人天使</span><span>&yen;10.00元</span></p>
+                <p><span>2015-05-07</span><span style="margin-left:2px">18:54:25</span></p>
+              </div>
+              <span class="fl-right order-status invalid">订单已退款</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

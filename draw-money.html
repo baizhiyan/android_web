@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>提现</title>
+    <link href="css/base.css" rel="stylesheet" type="text/css" >
+    <link href="css/style.css" rel="stylesheet" type="text/css" >
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script>
+    //10px 1rem;
+    !function(){function a(){if(document.documentElement.clientWidth<600){document.documentElement.style.fontSize=document.documentElement.clientWidth/32+"px"}else{document.documentElement.style.fontSize="16.875px"}}var b=null;window.addEventListener("resize",function(){clearTimeout(b),b=setTimeout(a,300)},!1),a()}(window);
+    </script>
+  </head>
+  <body style="background:#f1f1f1;">
+    <div class="sum">
+      <p class="hint">请输入提现金额</p>
+      <input type="text" placeholder="当前可提现余额：200元">
+      <div class="explain">
+        <p>提现金额必须大于或等于10元</p>
+        <p>提现金额小于50元将收取手续费3元</p>
+      </div>
+    </div>
+    <div class="card">
+      <p class="hint">提现到</p>
+
+      <!-- 添加新的银行卡 -->
+      <div class="add-card">
+        <a href="#">+添加新的银行卡</a>
+      </div>
+
+      <!-- 更换已有的银行卡 -->
+      <div class="change-card">
+        <ul>
+          <li>银行：工商银行</li>
+          <li>性别：啃脖怪</li>
+          <li>卡号：6228481552887309119</li>
+        </ul>
+        <a href="#">+更换银行卡</a>
+      </div>
+    </div>
+    <button class="check">确定</button>
+
+    <!-- 提现提示 -->
+    <div class="mask">
+      <div class="mask-bg"></div>
+
+      <!-- 扣除手续费提示 -->
+     <!--  <div class="imask failed">
+        <div class="hint">
+          <p>您的提现金额小于50元</p>
+          <p>将扣除3元手续费</p>
+        </div>
+        <div class="btn clearfix">
+          <button class="next-time fl-left">下次再提</button>
+          <button class="sure fl-right">确定</button>
+        </div>
+      </div> -->
+      <!-- 提现成功提示 -->
+      <div class="imask success">
+        <div class="hint">
+          <h3>提现申请成功</h3>
+          <h4>&yen;200.00</h4>
+          <p>提现金额将于2个工作日打入你的</p>
+          <p>银行卡号，请注意查收</p>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+          $('.check').click(function () {
+            $('.mask').show();
+          })
+        })
+    </script>
+  </body>
+</html>
